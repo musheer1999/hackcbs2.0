@@ -1,0 +1,165 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-size:10px;
+	font-family:"Roboto Cn",sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration:none;
+	color:#eee;
+}
+header{
+	width:100%;
+	height:100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("pic/Patient_data.jpg") center no-repeat;
+	background-size:cover;
+}
+.container{
+	max-width:120rem;
+	width:90%
+	margin:0 auto;
+}
+
+nav{
+	padding-top: 2rem;
+	display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-transform:uppercase;
+    font-size:1.6rem;	
+}
+
+.brand{
+	font-size:3rem;
+	font-weight:300;
+	margin-left:40px;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+
+.brand span{
+	color:crimson;
+}
+
+nav ul{
+	display:flex;
+}
+nav ul li{
+	list-style:none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+
+
+ nav ul li a{
+	 padding:1rem 0;
+	 margin:0 3rem;
+	 position: relative;
+	 letter-spacing:2px;
+ }
+ nav ul li a:last-child{
+	 margin-right:0;
+ }
+ 
+ nav ul li a::before,
+ nav ul li a::after{
+	 content: '';
+	 position: absolute;
+	 width:100%;
+	 height: 2px;
+	 background-color: crimson;
+	 left: 0;
+	 transform: scaleX(0);
+	 transition:all 0.5s; 
+ }
+ 
+ nav ul li a::before{
+	 top: 0;
+	 transform-origin: left;
+ }
+ 
+ nav ul li a::after{
+	 bottom:0;
+	 transform-origin: right;
+ }
+ 
+ nav ul li a:hover::before,
+ nav ul li a:hover::after{
+    transform: scaleX(1);
+ }
+ 
+ @keyframes slideIn {
+	 from{
+		 
+	 }
+	 to{
+		 transform: translateX(0);
+	 }
+ }
+
+
+
+
+ #login{
+	position:absolute;
+	background-color:rgba(0,0,0,0.5);
+	border-radius: 1rem;
+	height:500px;
+	width:400px;
+	top:15%;
+	left:35%;
+	box-sizing:border-box;
+	}
+	::placeholder{
+	color:white;
+	}
+	
+	#login ul li{
+		text-align:  left;
+		margin-left: 20px;
+		color:white;
+		list-style: none;
+		font-family: 'Indie Flower', cursive;
+		font-size:17px;
+		margin-top: 20px;
+	}
+
+.Face{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	margin-left: 38%;
+	margin-top: -10%;
+}
+
+#login ul li span{
+	color:red;
+	text-align: center;
+}
+
+.Face:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
