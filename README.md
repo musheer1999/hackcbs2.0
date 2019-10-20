@@ -1,0 +1,2 @@
+# hackcbs2.0
+The project is about the management of a patient's medical history. when referred from one hospital to another. Only registered hospitals with their valid id can register a patient's record. The list of hospitals and patients is stored on a localhost server. It just gives a demo of the management of the system.  The server is the localhost.
